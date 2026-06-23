@@ -141,7 +141,7 @@ function Navbar() {
           <span className="nav-brand-mark">
             <Satellite className="h-3.5 w-3.5" />
           </span>
-          IR2RGB
+          DIVYA VISION
         </a>
         <div className="nav-menu">
           {navItems.map((item) => (
@@ -188,12 +188,12 @@ function Hero() {
 
   return (
     <section id="home" ref={ref} className="relative min-h-screen overflow-hidden">
-      <motion.img src={earthImage} alt="Earth from space" className="absolute inset-0 h-full w-full object-cover" style={{ scale, y }} />
+      <motion.img src={earthImage} alt="Earth from space" className="absolute inset-0 h-full w-full object-cover" style={{ scale, y, filter: 'brightness(1.08)' }} />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_28%,rgba(245,158,11,0.1),transparent_28%),radial-gradient(circle_at_42%_18%,rgba(168,85,247,0.08),transparent_32%),linear-gradient(105deg,rgba(0,0,0,0.96)_0%,rgba(8,8,12,0.72)_48%,rgba(0,0,0,0.3)_100%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent via-black/20 to-black/95" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/3 max-w-sm h-px bg-gradient-to-r from-transparent via-amber-300/40 to-transparent blur-sm" />
       <Stars />
-      <div className="grid-overlay absolute inset-0 opacity-20" />
+      <div className="grid-overlay absolute inset-0 opacity-10" />
       <div className="absolute left-[12%] top-[24%] h-40 w-40 rounded-full bg-amber-300/8 blur-3xl" />
       <div className="absolute bottom-[18%] right-[16%] h-52 w-52 rounded-full bg-violet-400/8 blur-3xl" />
       <OrbitalSatellite />
@@ -364,6 +364,7 @@ function Demo() {
           <UploadCloud className="mb-5 h-12 w-12 text-amber-100" />
           <span className="text-xl font-semibold text-white">Initiate Thermal Transmission</span>
           <span className="mt-3 max-w-sm text-sm leading-6 text-slate-400">Transmit orbital satellite sectors to activate neural synthesis pipeline and observe RGB intelligence matrices.</span>
+          <span className="mt-2 max-w-sm text-xs text-amber-200/70">Landsat 8/9 imagery (B5, B6, B7 bands or scene package)</span>
           <input type="file" accept="image/*" className="sr-only" onChange={(event) => handleFile(event.target.files?.[0])} />
         </label>
         <div className="grid gap-5 md:grid-cols-2">
@@ -400,7 +401,7 @@ function Footer() {
       </svg>
       <div className="relative mx-auto flex w-[min(1120px,100%)] flex-col justify-between gap-8 md:flex-row md:items-center">
         <div>
-          <p className="text-lg font-semibold text-slate-300">IR2RGB Thermal Intelligence Command</p>
+          <p className="text-lg font-semibold text-slate-300">DIVYA VISION Thermal Intelligence Command</p>
           <p className="mt-2 max-w-xl text-sm text-slate-400">Transcending thermal obscurity through advanced synthesis, delivering crystalline mission-critical satellite operational intelligence.</p>
         </div>
       </div>
